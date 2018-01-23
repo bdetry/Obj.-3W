@@ -1,0 +1,118 @@
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+main h2
+{
+    margin-top: 10vh;
+    color: #333;
+}
+
+main div.chooseVille
+{
+    background-color: #1a9612;
+    width: 450px;
+    padding: 20px;
+}
+
+main div.chooseVille form
+{
+    width: 90%;
+    margin: auto;
+    
+}
+
+main div.chooseVille form select
+{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: #473100;
+}
+
+main div.chooseVille form input
+{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: #473100;
+    border: none;
+    margin-top: 5px;
+}
+
+.villeConatiner
+{
+    width: 70%;
+    border: solid 1px #999;    
+    margin-top: 10px;
+}
+
+.villeConatiner a.retour
+{
+    padding: 10px;
+    background-color: #ccc;
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.villeConatiner div:nth-of-type(1)
+{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+}
+
+.villeConatiner div:nth-of-type(2) , .villeConatiner div:nth-of-type(3) , .villeConatiner div:nth-of-type(4)
+{
+    width: 33.2%;
+    float: left;
+    background-color: #fff;
+    border-right: solid 1px #999;
+}
+
+.villeConatiner div:nth-of-type(2) p , .villeConatiner div:nth-of-type(3) p , .villeConatiner div:nth-of-type(4) p
+{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666;
+    border-bottom: solid 1px #ddd;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+.villeConatiner div:nth-of-type(2) ul , .villeConatiner div:nth-of-type(3) ul , .villeConatiner div:nth-of-type(4) ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.villeConatiner div:nth-of-type(2) ul li , .villeConatiner div:nth-of-type(3) ul li , .villeConatiner div:nth-of-type(4) ul li
+{
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.villeConatiner div:nth-of-type(2) ul li a , .villeConatiner div:nth-of-type(3) ul li a , .villeConatiner div:nth-of-type(4) ul li a
+{
+    color: #999;
+}

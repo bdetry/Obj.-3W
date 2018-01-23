@@ -1,0 +1,89 @@
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main h2
+{
+    margin-top: 10vh;
+    color: #333;
+}
+
+main div.chooseTaverne
+{
+    background-color: #1a9612;
+    width: 450px;
+    padding: 20px;
+}
+
+main div.chooseTaverne form
+{
+    width: 90%;
+    margin: auto;
+    
+}
+
+main div.chooseTaverne form select
+{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: #473100;
+}
+
+main div.chooseTaverne form input
+{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: #473100;
+    border: none;
+    margin-top: 5px;
+}
+
+.TaverneConatiner
+{
+    width: 30%;
+    border: solid 1px #999;    
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.TaverneConatiner a.retour
+{
+    padding: 10px;
+    background-color: #ccc;
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.TaverneConatiner h4
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #666;
+    border-bottom: solid 1px #666;
+    padding-bottom: 5px;
+}
+
+.TaverneConatiner p
+{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: #eee;
+    font-size: 1.8rem;
+    color: #666;
+}

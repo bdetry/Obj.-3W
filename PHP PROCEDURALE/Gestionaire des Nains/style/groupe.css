@@ -1,0 +1,174 @@
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+main h2
+{
+    margin-top: 10vh;
+    color: #333;
+}
+
+main div.chooseGroupe
+{
+    background-color: #1a9612;
+    width: 450px;
+    padding: 20px;
+}
+
+main div.chooseGroupe form
+{
+    width: 90%;
+    margin: auto;
+    
+}
+
+main div.chooseGroupe form select
+{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: #473100;
+}
+
+main div.chooseGroupe form input
+{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: #473100;
+    border: none;
+    margin-top: 5px;
+}
+
+.groupeConatiner
+{
+    width: 70%;
+    border: solid 1px #999;    
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.groupeConatiner a.retour
+{
+    padding: 10px;
+    background-color: #ccc;
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.groupeConatiner>div:nth-of-type(1)
+{
+    float: left;
+    width: 30%;
+    border-right: solid 1px #666;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+}
+
+.groupeConatiner div:nth-of-type(1) h3
+{
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #666;
+    border-bottom: solid 1px #666;
+}
+
+.groupeConatiner div:nth-of-type(1) p
+{
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8rem;
+    color: #666;
+}
+
+.groupeConatiner div:nth-of-type(1) p:nth-child(4)
+{
+    border-bottom: solid 0px #999;
+}
+.groupeConatiner div:nth-of-type(1) span
+{
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+}
+
+.groupeConatiner div:nth-of-type(1) ul
+{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.groupeConatiner div:nth-of-type(1) ul li
+{
+    width: 100%;
+    text-align: center;
+    margin: 3px;
+    font-size: 1.4rem;
+    background-color: #eee;
+    padding: 2px;
+}
+
+.groupeConatiner div:nth-of-type(1) p a
+{
+    color: #666;
+}
+
+.groupeConatiner div:nth-of-type(1) ul li a
+{
+    color: #666;
+}
+
+.groupeConatiner>div:nth-of-type(2)
+{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.actionGrp
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #eee;
+    margin-top: 5px;
+}
+
+.actionGrp h4
+{
+    text-align: center;
+    padding:10px;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    background-color: #7dd177;
+    box-sizing: border-box;
+}
+
+.actionGrp form
+{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.actionGrp form input
+{
+    margin: 5px;
+}
