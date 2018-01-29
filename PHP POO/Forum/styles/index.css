@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    margin: 0;
+    background-color: #ddd;
+}
+
+table
+{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table td
+{
+    padding: 5px;
+    font-size: 1.9rem;
+    border: solid 1px #333;
+    
+}
+
+.open
+{
+    background-color: #8fea90;
+}
+
+.closed
+{
+    background-color: #ea8f8f;
+}
+
+a
+{
+    color: #333;
+    text-decoration: none;
+}
