@@ -1,0 +1,152 @@
+/*
+ Theme Name:   {__THEME_NAME__}
+ Theme URI:    {__THEME_URI__}
+ Description:  {__THEME_DESCRIPTION__}
+ Author:       {__AUTHOR_NAME__}
+ Author URI:   {__AUTHOR_URI__}
+ Version:      {__THEME_VERSION__}
+ License:      {__THEME_LICENSE__}
+ License URI:  {__LICENSE_URI__}
+ Tags:         {__THEME_TAGS__}
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/**
+ * --------------------------------------------------
+ * GENERALS
+ * --------------------------------------------------
+ */
+*,*::before,*::after {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding-box;
+    -ms-background-clip:padding-box;
+    background-clip:padding-box;
+}
+:hover,:focus,:active { outline:none; }
+
+
+
+/**
+ * --------------------------------------------------
+ * TAGS
+ * --------------------------------------------------
+ */
+/* HTML5 */
+/*header,hgroup,nav,aside,article,figure,figcaption,section,details,footer,address { display:block; }*/
+address { font-style:normal; }
+input[type="color"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="email"],input[type="month"],input[type="number"],input[type="range"],input[type="search"],input[type="tel"],input[type="time"],input[type="url"],input[type="week"],input::-webkit-input-placeholder { -webkit-appearance:none; }
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-results-button,input[type="search"]::-webkit-search-results-decoration { -webkit-appearance:none; }
+/* GENERALS */
+/*html,body { margin:0;padding:0; }*/
+html { font-size:62.5%; }
+body {
+    cursor:default;
+    font-size:1.4rem;
+    line-height:1.2;
+}
+p { margin:0 0 10px 0;margin:0 0 1rem 0; }
+blockquote,q {
+    /*background:transparent url(./themes/parent/images/decorum/quote-closing.png) right bottom no-repeat;*/
+    display:inline-block;
+    margin:0;
+    min-height:12px;min-height:1.2rem;
+    padding:0 20px;padding:0 2rem;
+    quotes:none;
+}
+/*blockquote:first-letter,q:first-letter { padding-left:20px;padding-left:2rem; }*/
+blockquote:before,q:before {
+    content:url(./themes/parent/images/decorum/quote-opening.png);
+    float:left;
+    margin:0 10px 0 0;margin:0 1rem 0 0;
+
+    /* sélection */
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+blockquote:after,q:after {
+    content:url(./themes/parent/images/decorum/quote-closing.png);
+    float:right;
+    margin:0 0 0 10px;margin:0 0 0 1rem;
+
+    /* sélection */
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+fieldset {
+    border:none;
+    display:inline-block;
+    margin:10px 0;margin:1rem 0;
+    padding:0;
+    vertical-align:top;
+}
+    fieldset legend {
+        display:inline-block;
+        font-weight:bold;
+        margin:0 0 10px 0;margin:0 0 1rem 0;
+        padding:10px;padding:1rem;
+        text-transform:uppercase;
+        vertical-align:top;
+    }
+strong { font-weight:700; }
+em { font-style:italic; }
+sup {
+    font-size:smaller;
+    font-style:italic;
+}
+img {
+    border:none;
+    display:block;
+    line-height:1;
+    margin:0;
+    max-width:100%;
+    padding:0;
+
+    /* sélection */
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+figure {
+    line-height:1;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+    figure > img {
+        height:auto !important;
+        max-width:100%;
+    }
+a {
+    display:inline-block;
+
+    /* transition */
+    -webkit-transition-duration:.2s;
+    -moz-transition-duration:.2s;
+    -ms-transition-duration:.2s;
+    transition-duration:.2s;
+    -webkit-transition-timing-function:ease-in-out;
+    -moz-transition-timing-function:ease-in-out;
+    -ms-transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    /*white-space:nowrap;*/
+}
