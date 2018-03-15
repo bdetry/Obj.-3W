@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+        <title>Le Javascript - Mise en pratique</title>
+
+        <style type="text/css">
+            <!--
+            * { box-sizing:border-box; }
+            [role="main"] { font-size:0; }
+                [role="main"] * { font-size:14px; }
+
+            #sidebar-left {
+                display:inline-block;
+                margin-right:7%;
+                vertical-align:top;
+                width:33%;
+            }
+
+            #content-right {
+                display:inline-block;
+                vertical-align:top;
+                width:60%;
+            }
+            -->
+        </style>
+    </head>
+    <body>
+        <script src="plugin.js"></script>
+       
+        
+        <h1>Le Javascript - Mise en pratique</h1>
+        <p><em></em></p>
+        <hr />
+        <h2>Les plugins</h2>
+        <p><em>Pour cet exercice, vous devez créer un plugin en Javascript qui permettra de filtrer les items de liste par année ou par catégorie en décochant les cases non désirées.<br>Le lien de réinitialisation des filtres devra cocher toutes les cases et afficher tous les items.</em></p>
+
+        <main role="main">
+            <aside id="sidebar-left">
+                <ul class="widget" id="primary-widget">
+                    <li class="widget-item">
+                        <span class="widget-title">Filtrer par</span>
+                        <ul class="filter-controls" id="primary-filter">
+                            <li class="filter-item"><a class="filter-reset" href="" title="Réinitialiser les filtres"><span class="wrapper">Réinitialiser les filtres</span></a></li>
+                            <li class="filter-item">
+                                <fieldset class="filter-group">
+                                    <legend class="filter-title">Catégorie</legend>
+
+                                    <input checked="checked" data-filter="category:cat1" id="category-cat1" name="category[]" type="checkbox" value="cat1"><label for="category-cat1">cat1</label>
+                                    <input checked="checked" data-filter="category:cat2" id="category-cat2" name="category[]" type="checkbox" value="cat2"><label for="category-cat2">cat2</label>
+                                </fieldset>
+                                <fieldset class="filter-group">
+                                    <legend class="filter-title">Année</legend>
+
+                                    <input checked="checked" data-filter="year:1999" id="year-1999" name="year[]" type="checkbox" value="1999"><label for="year-1999">1999</label>
+                                    <input checked="checked" data-filter="year:2000" id="year-2000" name="year[]" type="checkbox" value="2000"><label for="year-2000">2000</label>
+                                    <input checked="checked" data-filter="year:2015" id="year-2015" name="year[]" type="checkbox" value="2015"><label for="year-2015">2015</label>
+                                    <input checked="checked" data-filter="year:2016" id="year-2016" name="year[]" type="checkbox" value="2016"><label for="year-2016">2016</label>
+                                    <input checked="checked" data-filter="year:2017" id="year-2017" name="year[]" type="checkbox" value="2017"><label for="year-2017">2017</label>
+                                </fieldset>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <section id="content-right">
+                <article>
+                    <ul id="list">
+                        <li class="item" data-category="cat2" data-year="2000">
+                            <h3>Item 1</h3>
+                            <h4>Catégorie 2</h4>
+                            <time datetime="2000-01">2000</time>
+                        </li>
+                        <li class="item" data-category="cat1" data-year="2000">
+                            <h3>Item 2</h3>
+                            <h4>Catégorie 1</h4>
+                            <time datetime="2000-12">2000</time>
+                        </li>
+                        <li class="item" data-category="cat1" data-year="2015">
+                            <h3>Item 3</h3>
+                            <h4>Catégorie 1</h4>
+                            <time datetime="2015-01">2015</time>
+                        </li>
+                        <li class="item" data-category="cat2" data-year="2017">
+                            <h3>Item 4</h3>
+                            <h4>Catégorie 2</h4>
+                            <time datetime="2017-01">2017</time>
+                        </li>
+                        <li class="item" data-category="cat1" data-year="1999">
+                            <h3>Item 5</h3>
+                            <h4>Catégorie 1</h4>
+                            <time datetime="1999-12">1999</time>
+                        </li>
+                        <li class="item" data-category="cat1" data-year="2016">
+                            <h3>Item 6</h3>
+                            <h4>Catégorie 1</h4>
+                            <time datetime="2015-01">2016</time>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        
+         <script>
+            // <![CDATA[
+            var plugin = new MyPlugin();
+            var filters = document.getElementsByTagName('input');
+            
+            document.getElementsByTagName('a')[0].addEventListener('click' , function(e){
+                plugin.set_default_filter(e , filters);
+            });
+            
+            for(var filter of filters){
+                filter.addEventListener('click' , execute_plug_in);
+            }
+            
+            function execute_plug_in(e){  plugin.exe(e); }            
+            
+             // ]]>
+        </script>
+    </body>
+</html>
